@@ -1,99 +1,139 @@
-body {
-    font-family: 'Arial', sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    background-color: #020203;
-    color: #1b6191;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 header {
-    background-image: url('path/to/your/image.jpg'); /* Adicione uma imagem de fundo apropriada */
-    background-size: cover;
+    background: #4CAF50;
     color: white;
+    padding: 1em 0;
     text-align: center;
-    padding: 2em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
-nav {
-    background-color: #0d1961;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
+header nav ul {
+    list-style: none;
     padding: 0;
-    text-align: center;
+    margin: 1em 0;
 }
 
-nav ul li {
-    display: inline-block;
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
-    padding: 15px 20px;
     text-decoration: none;
-    display: inline-block;
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    background-color: #ee1616;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.banner {
-    background-image: url('path/to/your/banner-image.jpg'); /* Adicione uma imagem de fundo apropriada */
-    background-size: cover;
-    color: white;
-    padding: 5em 0;
-    text-align: center;
-}
-
-main {
-    padding: 20px 0;
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
 section {
-    margin-bottom: 40px;
+    padding: 2em 0;
+    text-align: center;
 }
 
-.destinations-grid {
+#sobre {
+    background: #f4f4f4;
+}
+
+
+#destinos .destinos-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
 }
 
-.destination {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(33.333% - 20px);
+.destino {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.destino img {
+    width: 100%;
+    height: auto;
+}
+
+.destino h3 {
+    background: #4CAF50;
+    color: white;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+}
+
+.destino p {
+    padding: 1em;
+    text-align: left;
+}
+
+form {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label, form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #45a049;
 }
 
 footer {
-    background-color: #333;
+    background: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-}
-
-@media (max-width: 768px) {
-    .destinations-grid {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        display: block;
-    }
+    padding: 1em 0;
+    margin-top: 2em;
 }

@@ -1,54 +1,112 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turismo Rural</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Explore o Turismo Rural</h1>
+            <h1><i class="fas fa-tractor"></i> Turismo Rural</h1>
+            <nav>
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="#destinos">Destinos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <nav>
+
+    <section id="sobre">
         <div class="container">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="destinations.html">Destinos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
+            <h2>Sobre Nós</h2>
+            <p>Explore a tranquilidade do campo e a beleza da natureza com nossas experiências únicas de turismo rural.</p>
+            <h2>Informações</h2>
+            <div class="destinos-grid">
+                <div class="destino">
+                    <h3>Sobre Nós</h3>
+                    <p>Bem-vindo ao Turismo Rural!
+
+                        Somos apaixonados por conectar as pessoas com a tranquilidade e a beleza do campo. 
+                        Nosso objetivo é oferecer experiências autênticas de turismo rural, onde você pode se desconectar do ritmo acelerado da cidade e se reconectar com a natureza
+                        .</p>
+                        <h3>Nossa Missão</h3>
+                    <p>Nossa missão é proporcionar momentos inesquecíveis em ambientes rurais, promovendo o bem-estar, a sustentabilidade e a valorização da 
+                        cultura local. Acreditamos que o contato com a natureza e a vivência em espaços rurais trazem benefícios inestimáveis para a saúde e a 
+                        qualidade de vida.</p>
+
+                        
+                        <h3>O que Oferecemos</h3>
+                    <p>- *Hospedagem Confortável:* Nossos chalés e pousadas foram cuidadosamente planejados para garantir conforto e comodidade, integrando-se harmoniosamente com o entorno natural.
+                        - *Experiências Autênticas:* Desfrute de atividades como trilhas, passeios a cavalo, colheita de frutas e muito mais, tudo em um ambiente genuíno e acolhedor.
+                        - *Gastronomia Local:* Saboreie pratos preparados com ingredientes frescos e locais, conhecendo de perto a culinária da região.
+                        - *Sustentabilidade:* Comprometidos com práticas sustentáveis, buscamos preservar o meio ambiente e apoiar a economia local.</p>
+
+                        <h3>Nossa História</h3>
+                        <p>Turismo Rural nasceu do sonho de compartilhar o encanto e a serenidade da vida no campo. Desde 2007, 
+                            temos nos dedicado a criar um espaço onde os visitantes possam se sentir em casa, rodeados pela beleza natural e pela hospitalidade rural.</p>
+
+                        <h3>Conheça Nossa Equipe</h3>
+                        <p> Nossa equipe é formada por pessoas apaixonadas pelo que fazem, prontas para oferecer a você um atendimento acolhedor e personalizado. Cada membro do nosso time é dedicado a tornar sua estadia inesquecível, garantindo que você aproveite ao máximo sua experiência rural.
+                        </p>       
         </div>
-    </nav>
-    <main>
-        <section id="home" class="banner">
-            <div class="container">
-                <h2>Bem-vindo ao Turismo Rural</h2>
-                <p>Descubra as maravilhas da vida no campo e aproveite a tranquilidade e a beleza natural.</p>
+    </section>
+    <section id="destinos">
+        <div class="container">
+            <h2>Destinos Populares</h2>
+            <div class="destinos-grid">
+                <div class="destino">
+                    <img src="fazendaencantada.jpeg" alt="Fazenda">
+                    <h3>Fazenda Encantada</h3>
+                    <p>Descubra a vida na fazenda com atividades para toda a família.
+                        *Localização:* Serra Gaúcha, Rio Grande do Sul
+
+*Descrição:*  
+A Fazenda Encantada é um verdadeiro oásis de paz e beleza natural, situada no coração da Serra Gaúcha. Este destino mágico é ideal para quem busca uma experiência única e autêntica no campo, com atividades que vão desde passeios a cavalo até a degustação de vinhos produzidos na própria fazenda.
+</p>
+                </div>
+                <div class="destino">
+                    <img src="montanhaverde.jpeg" alt="Montanha">
+                    <h3>Montanhas Verdes</h3>
+                    <p>Desfrute de caminhadas e vistas deslumbrantes nas montanhas.</p>
+                </div>
+                <div class="destino">
+                    <img src="vinhedo.jpeg" alt="Vinhedo">
+                    <h3>Vinhedo Sereno</h3>
+                    <p>Deguste os melhores vinhos da região em um ambiente tranquilo.</p>
+                </div>
             </div>
-        </section>
-        <section id="about">
-            <div class="container">
-                <h2>Sobre</h2>
-                <p>Nosso objetivo é promover o turismo rural, proporcionando experiências autênticas e inesquecíveis em fazendas e vilarejos.</p>
-            </div>
-        </section>
-        
-        <section id="contact">
-            <div class="container">
-                <h2>Contato</h2>
-                <p>Entre em contato conosco para mais informações e reservas:</p>
-                <p>Email: contato@turismorural.com</p>
-                <p>Telefone: (11) 1234-5678</p>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <p>&copy; 2024 Turismo Rural. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
